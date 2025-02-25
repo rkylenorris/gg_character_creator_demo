@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Steam Knight",
+        "hit_die": "d10",
+        "primary_abilities": ["Might", "Endurance Core"],
+        "saving_throws": ["Might", "Endurance Core"],
+        "proficiencies": {
+            "armor": ["Medium Armor", "Heavy Armor", "Shields"],
+            "weapons": ["Melee Weapons", "Gunplay & Ranged Combat"],
+            "tools": ["Industrial Tools", "Weapon Maintenance Kit"]
+        },
+        "skills": ["Brute Force", "Industrial Combat", "Steam Endurance"],
+        "starting_equipment": ["Steamplate Armor", "Clockwork Saber", "Deployable Shield"],
+        "starting_ability_scores": {"Might": 15, "Endurance Core": 14, "Reflexes": 12, "Arcane Logic": 10, "Aether Sense": 8, "Presence": 10}
+    },
+    {
+        "name": "Arcane Engineer",
+        "hit_die": "d8",
+        "primary_abilities": ["Arcane Logic", "Reflexes"],
+        "saving_throws": ["Arcane Logic", "Reflexes"],
+        "proficiencies": {
+            "armor": ["Light Armor"],
+            "weapons": ["Gunplay & Ranged Combat"],
+            "tools": ["Tinkering Kit", "Blueprint Scanner"]
+        },
+        "skills": ["Schematic Analysis", "Aether Mechanics", "Precision Engineering"],
+        "starting_equipment": ["Clockwork Ledger", "Tesla Pistol", "Toolkit"],
+        "starting_ability_scores": {"Arcane Logic": 16, "Reflexes": 14, "Might": 10, "Endurance Core": 12, "Aether Sense": 12, "Presence": 8}
+    },
+    {
+        "name": "Gearwright",
+        "hit_die": "d8",
+        "primary_abilities": ["Reflexes", "Aether Sense"],
+        "saving_throws": ["Reflexes", "Arcane Logic"],
+        "proficiencies": {
+            "armor": ["Light Armor"],
+            "weapons": ["Gunplay & Ranged Combat", "Tinkering & Traps"],
+            "tools": ["Lockpicking Set", "Explosive Charges"]
+        },
+        "skills": ["Tinkering & Traps", "Aether Reflexes", "Gunplay & Ranged Combat"],
+        "starting_equipment": ["Gadget Gauntlet", "Lockpick Toolkit", "Explosive Satchels"],
+        "starting_ability_scores": {"Reflexes": 16, "Aether Sense": 14, "Arcane Logic": 12, "Might": 10, "Endurance Core": 12, "Presence": 10}
+    },
+    {
+        "name": "Runebound Cleric",
+        "hit_die": "d8",
+        "primary_abilities": ["Aether Sense", "Presence"],
+        "saving_throws": ["Aether Sense", "Endurance Core"],
+        "proficiencies": {
+            "armor": ["Light Armor", "Medium Armor"],
+            "weapons": ["Melee Weapons"],
+            "tools": ["Runic Inscriptions", "Healing Kit"]
+        },
+        "skills": ["Magical Tuning", "Ritual Crafting", "Foresight & Instincts"],
+        "starting_equipment": ["Runic Gauntlet", "Aether-Infused Tome", "Healing Elixirs"],
+        "starting_ability_scores": {"Aether Sense": 16, "Presence": 14, "Endurance Core": 12, "Arcane Logic": 12, "Might": 10, "Reflexes": 8}
+    },
+    {
+        "name": "Wild Warden",
+        "hit_die": "d10",
+        "primary_abilities": ["Aether Sense", "Might"],
+        "saving_throws": ["Might", "Aether Sense"],
+        "proficiencies": {
+            "armor": ["Medium Armor"],
+            "weapons": ["Gunplay & Ranged Combat", "Melee Weapons"],
+            "tools": ["Survival Kit", "Animal Bonding"]
+        },
+        "skills": ["Foresight & Instincts", "Gunplay & Ranged Combat", "Load Bearing"],
+        "starting_equipment": ["Grappling Hook Launcher", "Repeating Crossbow", "Survival Gear"],
+        "starting_ability_scores": {"Aether Sense": 14, "Might": 16, "Endurance Core": 12, "Arcane Logic": 10, "Reflexes": 12, "Presence": 8}
+    }
+]

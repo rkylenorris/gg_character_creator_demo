@@ -1,0 +1,81 @@
+[
+    {
+        "name": "Gearborn",
+        "description": "Mechanical beings infused with arcane energy, built for labor, war, or innovation, now forging their own destinies.",
+        "ability_score_increase": {"Arcane Logic": 2, "Endurance Core": 1},
+        "size": "Medium",
+        "speed": 30,
+        "traits": [
+            "Clockwork Resilience: Immune to disease and resistant to poison.",
+            "Integrated Tools: Can store a small gadget inside their body.",
+            "Magitech Core: Can absorb magical energy once per long rest to regain health or power a device."
+        ],
+        "languages": ["Common", "Machine Cant"]
+    },
+    {
+        "name": "Aetherians",
+        "description": "Beings infused with raw magical energy, their bodies flickering between physical and ethereal states.",
+        "ability_score_increase": {"Aether Sense": 2, "Reflexes": 1},
+        "size": "Medium",
+        "speed": 35,
+        "traits": [
+            "Floating Form: Ignores difficult terrain and hovers slightly above the ground.",
+            "Aether Pulse: Once per long rest, unleash a burst of magic that repels nearby enemies.",
+            "Spell Resonance: Can detect nearby magical disturbances."
+        ],
+        "languages": ["Common", "Aetherial"]
+    },
+    {
+        "name": "Steamforged",
+        "description": "Humans enhanced with mechanical implants, using steam-driven augmentations for power.",
+        "ability_score_increase": {"Might": 2, "Endurance Core": 1},
+        "size": "Medium",
+        "speed": 30,
+        "traits": [
+            "Cybernetic Frame: Increased durability, but vulnerable to electrical damage.",
+            "Built-In Tool: Starts with a minor enhancement (e.g., telescopic vision, retractable blade).",
+            "Overdrive Mode: Temporarily boost a physical stat at the risk of overheating."
+        ],
+        "languages": ["Common", "Technospeak"]
+    },
+    {
+        "name": "Gloomkin",
+        "description": "Mysterious, shadow-touched beings who exist between dimensions, skilled in stealth and mysticism.",
+        "ability_score_increase": {"Reflexes": 2, "Aether Sense": 1},
+        "size": "Medium",
+        "speed": 30,
+        "traits": [
+            "Shadow Step: Can teleport short distances in dim light or darkness.",
+            "Eerie Perception: Can see magical energy and hidden pathways.",
+            "Haunting Presence: Once per long rest, cause nearby enemies to hesitate in fear."
+        ],
+        "languages": ["Common", "Whispered Tongue"]
+    },
+    {
+        "name": "Emberkin",
+        "description": "A race born of fire magic and industry, their bodies radiate warmth and energy.",
+        "ability_score_increase": {"Endurance Core": 2, "Arcane Logic": 1},
+        "size": "Medium",
+        "speed": 30,
+        "traits": [
+            "Inner Furnace: Resistant to heat damage, but sensitive to extreme cold.",
+            "Forge Affinity: Gains a bonus when crafting or repairing mechanical devices.",
+            "Ignition Burst: Once per long rest, release a fiery shockwave when injured."
+        ],
+        "languages": ["Common", "Ignan"]
+    },
+    {
+        "name": "Skyborn",
+        "description": "Descendants of ancient winged beings, they thrive in high altitudes and maneuver effortlessly through the air.",
+        "ability_score_increase": {"Reflexes": 2, "Presence": 1},
+        "size": "Medium",
+        "speed": 30,
+        "glide_speed": 40,
+        "traits": [
+            "Glide: Can slow fall and move short distances in the air.",
+            "Hawk’s Sight: Superior vision, granting proficiency in Perception.",
+            "Stormcall: Can manipulate minor weather effects around them."
+        ],
+        "languages": ["Common", "Aeric"]
+    }
+]

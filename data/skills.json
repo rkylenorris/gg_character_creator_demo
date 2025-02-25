@@ -1,0 +1,164 @@
+{
+    "skills": [
+        {
+            "name": "Brute Force",
+            "ability": "Might",
+            "description": "Used for breaking, lifting, forcing mechanical devices open.",
+            "proficiency_levels": {
+                "Novice": "+1 to checks involving lifting or forcing open doors/hatches.",
+                "Expert": "+2 bonus when breaking or bending reinforced materials.",
+                "Mastery": "Can break through heavy machinery or barriers without injury."
+            }
+        },
+        {
+            "name": "Industrial Combat",
+            "ability": "Might",
+            "description": "Proficiency in heavy weapons, hammers, or mechanical-powered melee attacks.",
+            "proficiency_levels": {
+                "Novice": "+1 attack bonus with heavy weapons.",
+                "Expert": "Advantage on disarming enemies using industrial tools/weapons.",
+                "Mastery": "Heavy weapon strikes can stagger enemies, reducing their next action."
+            }
+        },
+        {
+            "name": "Steam Endurance",
+            "ability": "Might",
+            "description": "The ability to resist extreme heat, handle heavy machinery, or survive industrial hazards.",
+            "proficiency_levels": {
+                "Novice": "+1 resistance against heat and smoke-related damage.",
+                "Expert": "Can work longer in hazardous environments without fatigue.",
+                "Mastery": "Immune to minor steam burns and resistant to intense heat exposure."
+            }
+        },
+        {
+            "name": "Precision Engineering",
+            "ability": "Reflexes",
+            "description": "Fine motor skills for repairing, modifying, and assembling intricate devices.",
+            "proficiency_levels": {
+                "Novice": "+1 bonus on quick repairs.",
+                "Expert": "Can modify devices for temporary bonuses (e.g., increased output).",
+                "Mastery": "Can disassemble and reassemble complex mechanisms quickly."
+            }
+        },
+        {
+            "name": "Aether Reflexes",
+            "ability": "Reflexes",
+            "description": "Dodging magical surges, avoiding steam explosions, and reacting to sudden mechanical failures.",
+            "proficiency_levels": {
+                "Novice": "+1 bonus to dodge magic-related effects.",
+                "Expert": "Advantage on evasion when reacting to an explosion or spell surge.",
+                "Mastery": "Can predict and completely negate a minor magical hazard once per day."
+            }
+        },
+        {
+            "name": "Tinkering & Traps",
+            "ability": "Reflexes",
+            "description": "The skill of disabling mechanical locks, bypassing security systems, or setting traps.",
+            "proficiency_levels": {
+                "Novice": "+1 to checks related to lockpicking or trap disarming.",
+                "Expert": "Can set up simple mechanical traps within 5 minutes.",
+                "Mastery": "Can bypass advanced security systems or create specialized gadgets."
+            }
+        },
+        {
+            "name": "Gunplay & Ranged Combat",
+            "ability": "Reflexes",
+            "description": "Proficiency with firearms, clockwork crossbows, and steam-powered ranged weapons.",
+            "proficiency_levels": {
+                "Novice": "+1 to ranged attack rolls.",
+                "Expert": "Reload times reduced; can fire twice per action.",
+                "Mastery": "Critical hits on ranged attacks deal bonus explosive damage."
+            }
+        },
+        {
+            "name": "Overclock Control",
+            "ability": "Endurance Core",
+            "description": "Determines how well you can sustain pushing your body and machines beyond limits before burning out.",
+            "proficiency_levels": {
+                "Novice": "+1 to overclocking-related rolls.",
+                "Expert": "Can push limits longer before suffering exhaustion.",
+                "Mastery": "Immune to first instance of overclock burnout per long rest."
+            }
+        },
+        {
+            "name": "Toxin & Smoke Resistance",
+            "ability": "Endurance Core",
+            "description": "Resisting alchemy fumes, steam-related hazards, and industrial contaminants.",
+            "proficiency_levels": {
+                "Novice": "+1 resistance to poison or toxic fumes.",
+                "Expert": "Can function in hazardous areas without penalty for longer.",
+                "Mastery": "Immune to weak toxins and resistant to lethal industrial gases."
+            }
+        },
+        {
+            "name": "Schematic Analysis",
+            "ability": "Arcane Logic",
+            "description": "Understanding blueprints, magical circuitry, and reverse-engineering lost technology.",
+            "proficiency_levels": {
+                "Novice": "+1 bonus when studying schematics.",
+                "Expert": "Can reverse-engineer devices twice as fast.",
+                "Mastery": "Can instantly recognize and understand advanced tech or runes."
+            }
+        },
+        {
+            "name": "Runic Studies",
+            "ability": "Arcane Logic",
+            "description": "Knowledge of ancient grimoires, spell inscriptions, and decoding arcane formulas.",
+            "proficiency_levels": {
+                "Novice": "+1 to checks related to deciphering runes.",
+                "Expert": "Can identify magical properties of objects by touch.",
+                "Mastery": "Can inscribe temporary runes that enhance weapons or armor."
+            }
+        },
+        {
+            "name": "Foresight & Instincts",
+            "ability": "Aether Sense",
+            "description": "Predicting enemy actions, sensing danger, or reacting to magical interference.",
+            "proficiency_levels": {
+                "Novice": "+1 to initiative rolls.",
+                "Expert": "Advantage on perception checks in combat scenarios.",
+                "Mastery": "Can instinctively dodge the first attack in combat once per long rest."
+            }
+        },
+        {
+            "name": "Influence Protocols",
+            "ability": "Presence",
+            "description": "Negotiating with merchants, engineers, or AI-driven automatons.",
+            "proficiency_levels": {
+                "Novice": "+1 to persuasion when dealing with tech-based entities.",
+                "Expert": "Can convince neutral constructs to follow simple commands.",
+                "Mastery": "Once per long rest, can override a construct’s behavior for 1 minute."
+            }
+        },
+        {
+            "name": "Command Presence",
+            "ability": "Presence",
+            "description": "Inspiring allies, leading a squad, or intimidating enemies through sheer authority.",
+            "proficiency_levels": {
+                "Novice": "+1 to intimidation or leadership rolls.",
+                "Expert": "Allies within 10 feet gain +1 to attack rolls.",
+                "Mastery": "Can force one enemy to hesitate or flee once per long rest."
+            }
+        },
+        {
+            "name": "Arcane Diplomacy",
+            "ability": "Presence",
+            "description": "Convincing mystical beings, spirits, or intelligent machines to cooperate.",
+            "proficiency_levels": {
+                "Novice": "+1 to persuasion against arcane entities.",
+                "Expert": "Can negotiate minor favors from magical beings.",
+                "Mastery": "Can forge temporary pacts with magical creatures for short-term benefits."
+            }
+        },
+        {
+            "name": "Aether Mechanics",
+            "ability": "Arcane Logic",
+            "description": "The ability to merge magic with technology, create enchanted weapons, and modify spell-powered devices.",
+            "proficiency_levels": {
+                "Novice": "+1 to checks involving magical tech integration.",
+                "Expert": "Can enchant weapons or armor with minor magical properties.",
+                "Mastery": "Can create complex magical devices or enchantments."
+            }
+        }
+    ]
+}

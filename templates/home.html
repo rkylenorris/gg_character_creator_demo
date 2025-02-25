@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block main %}
+<div class="jumbotron">
+    <h1 class="display-4">Welcome to Gears and Grimoires!</h1>
+    <p class="lead">This is a steampunk/magical fantasy RPG demo built with Flask and Flask-Bootstrap.</p>
+    <hr class="my-4">
+    <p>Get started by creating your character.</p>
+    <a class="btn btn-primary btn-lg" href="{{ url_for('create_character') }}" role="button">Create Character</a>
+</div>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends "bootstrap/base.html" %}
+{% block title %}Gears and Grimoires{% endblock %}
+{% block head %}
+  {{ super() }}
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+{% endblock %}
+{% block navbar %}
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="{{ url_for('home') }}">Gears and Grimoires</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+</nav>
+{% endblock %}
+{% block content %}
+  <div class="container">
+    {% block main %}{% endblock %}
+  </div>
+{% endblock %}

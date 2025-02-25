@@ -1,0 +1,90 @@
+[
+    {
+        "name": "Clockwork Orphan",
+        "description": "Raised in the industrial underbelly, you learned to survive among discarded machines and forgotten technology.",
+        "feature": {
+            "name": "Urban Scavenger",
+            "description": "You can easily find useful scraps and tools in industrial ruins."
+        },
+        "skill_proficiencies": ["Tinkering & Traps", "Aether Reflexes"],
+        "tool_proficiencies": ["Lockpicking Set"],
+        "starting_equipment": ["Grappling Hook", "Small Toolset", "Scrap Metal Collection"]
+    },
+    {
+        "name": "Steamwright's Apprentice",
+        "description": "You trained under a master inventor, learning the delicate balance of magic and mechanics.",
+        "feature": {
+            "name": "Workshop Access",
+            "description": "You can request blueprints and materials from your former mentor's workshop."
+        },
+        "skill_proficiencies": ["Precision Engineering", "Schematic Analysis"],
+        "tool_proficiencies": ["Tinkering Kit"],
+        "starting_equipment": ["Blueprint Scrolls", "Clockwork Wrench", "Prototype Gear"]
+    },
+    {
+        "name": "Arcane Archivist",
+        "description": "You spent years studying magical texts and technological blueprints, unlocking hidden knowledge.",
+        "feature": {
+            "name": "Lore Recall",
+            "description": "You have an uncanny ability to recall arcane and engineering knowledge."
+        },
+        "skill_proficiencies": ["Runic Studies", "Aether Mechanics"],
+        "tool_proficiencies": ["Bookbinding Tools"],
+        "starting_equipment": ["Enchanted Quill", "Old Spellbook", "Librarian’s Goggles"]
+    },
+    {
+        "name": "Guild Operative",
+        "description": "You worked for a powerful guild controlling access to rare magical technology.",
+        "feature": {
+            "name": "Guild Connections",
+            "description": "You have access to underground markets and restricted blueprints."
+        },
+        "skill_proficiencies": ["Influence Protocols", "Tinkering & Traps"],
+        "tool_proficiencies": ["Forgery Kit"],
+        "starting_equipment": ["False Identity Papers", "Encrypted Notes", "Guild Badge"]
+    },
+    {
+        "name": "Urban Innovator",
+        "description": "A self-made inventor, you've turned discarded junk into groundbreaking gadgets.",
+        "feature": {
+            "name": "Scrapyard Genius",
+            "description": "You can create makeshift tools and minor gadgets on the fly."
+        },
+        "skill_proficiencies": ["Precision Engineering", "Gunplay & Ranged Combat"],
+        "tool_proficiencies": ["Tinkering Kit"],
+        "starting_equipment": ["Handmade Pistol", "Gadget Satchel", "Experimental Battery"]
+    },
+    {
+        "name": "Ethereal Envoy",
+        "description": "You mediate between the mechanical world and the arcane realm, balancing both energies.",
+        "feature": {
+            "name": "Mystic Negotiator",
+            "description": "You have an innate ability to communicate with both spirits and constructs."
+        },
+        "skill_proficiencies": ["Arcane Diplomacy", "Magical Tuning"],
+        "tool_proficiencies": ["Aether Compass"],
+        "starting_equipment": ["Silver Insignia", "Translated Runes", "Pocket Dimensional Key"]
+    },
+    {
+        "name": "Steamborne Nomad",
+        "description": "A wanderer exploring industrial ruins, you have an eye for lost relics and forgotten magic.",
+        "feature": {
+            "name": "Wasteland Survival",
+            "description": "You can identify valuable artifacts and detect hidden machinery."
+        },
+        "skill_proficiencies": ["Foresight & Instincts", "Schematic Analysis"],
+        "tool_proficiencies": ["Survival Kit"],
+        "starting_equipment": ["Rebreather Mask", "Artifact Detector", "Traveler’s Coat"]
+    },
+    {
+        "name": "Runic Forger",
+        "description": "You craft enchanted items by fusing ancient runes with modern technology.",
+        "feature": {
+            "name": "Runesmith",
+            "description": "You can inscribe temporary magical effects on metal objects."
+        },
+        "skill_proficiencies": ["Ritual Crafting", "Runic Studies"],
+        "tool_proficiencies": ["Engraving Tools"],
+        "starting_equipment": ["Runed Hammer", "Spell-Stone", "Inscription Journal"]
+    }
+]
