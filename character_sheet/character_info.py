@@ -55,7 +55,7 @@ class AbilityModifiers:
         return (score - 10) // 2
 
 
-class EquipmentProficencies:
+class EquipmentProficiencies:
     def __init__(self, armor: list[str], weapons: list[str], tools: list[str]):
         self.armor = armor
         self.weapons = weapons
@@ -105,7 +105,7 @@ class Pack:
         self.misc = misc
         
         
-class Equiped:
+class Equipped:
     def __init__(self, armor: dict[str, Union[str, int]], weapon: dict[str, Union[str, int]],
                  shield: dict[str, Union[str, int]], tools: list[dict[str, Union[str, int]]],
                  potions: list[dict[str, Union[str, int]]]):

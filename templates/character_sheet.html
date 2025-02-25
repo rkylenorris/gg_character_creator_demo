@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block main %}
+<h2>Character Sheet</h2>
+<ul class="list-group">
+  <li class="list-group-item"><strong>Name:</strong> {{ character.name }}</li>
+  <li class="list-group-item"><strong>Class:</strong> {{ character.player_class.name }}</li>
+  <li class="list-group-item"><strong>Race:</strong> {{ character.race.name }}</li>
+  <li class="list-group-item"><strong>Background:</strong> {{ character.background.name }}</li>
+  <li class="list-group-item"><strong>Appearance:</strong> {{ character.appearance }}</li>
+  <li class="list-group-item"><strong>Hit Points:</strong> {{ character.hit_points.max_hp }}</li>
+  <!-- Add more details as needed -->
+</ul>
+<br>
+<a class="btn btn-primary" href="{{ url_for('create_character') }}">Create Another Character</a>
+{% endblock %}

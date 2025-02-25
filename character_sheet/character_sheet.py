@@ -1,4 +1,4 @@
-from .character_info import Pack, Skills, EquipmentProficencies, AbilityScores, AbilityModifiers, HitPoints, Equiped
+from .character_info import Pack, Skills, EquipmentProficiencies, AbilityScores, AbilityModifiers, HitPoints, Equipped
 from .character_basis import CharacterClass, Race, Background
 
 class CharacterSheet:
@@ -10,14 +10,14 @@ class CharacterSheet:
     background: Background
     abilities: AbilityScores
     ability_modifiers: AbilityModifiers
-    equipment_proficencies: EquipmentProficencies
+    equipment_proficiencies: EquipmentProficiencies
     armor_class: int
     initiative: int
     hit_points: HitPoints
     appearance: str
-    equiped: Equiped
+    equipped: Equipped
     pack: Pack
-    proficency_modifier: int
+    proficiency_modifier: int
     skills: Skills
     
     def __init__(self, name: str, player_class: CharacterClass, race: Race,
@@ -29,10 +29,10 @@ class CharacterSheet:
         self.abilities = AbilityScores(starting_scores=player_class.starting_ability_scores)
         self.add_class_race_ability_increases()
         self.ability_modifiers = AbilityModifiers(self.abilities)
-        self.proficency_modifier = 2 # increases by 1 at levels 5 and 8
-        self.equipment_proficencies = self.get_equipment_proficencies()
-        self.skills = self.get_skill_proficencies()
-        self.equiped = None
+        self.proficiency_modifier = 2 # increases by 1 at levels 5 and 8
+        self.equipment_proficiencies = self.get_equipment_proficiencies()
+        self.skills = self.get_skill_proficiencies()
+        self.equipped = None
         self.pack = None
         self.hit_points = HitPoints()
         self.hit_points.roll_hit_points(player_class.hit_die, self.abilities.endurance_core)
@@ -48,7 +48,7 @@ class CharacterSheet:
             ability = ability.lower().replace(' ', '_')
             self.abilities.increase_ability_score(ability, increase)
     
-    def get_equipment_proficencies(self):
+    def get_equipment_proficiencies(self):
         armor = [item for item in self.player_class.proficiencies['armor']]
         weapons = [item for item in self.player_class.proficiencies['weapons']]
         tools = [item for item in self.player_class.proficiencies['tools']]
@@ -56,9 +56,9 @@ class CharacterSheet:
         for item in self.background.tool_proficiencies:
             tools.append(item)
         
-        return EquipmentProficencies(armor, weapons, tools)
+        return EquipmentProficiencies(armor, weapons, tools)
     
-    def get_skill_proficencies(self):
+    def get_skill_proficiencies(self):
         skills = [skill for skill in self.player_class.skills]
         for skill in self.background.skill_proficiencies:
             skills.append(skill)
