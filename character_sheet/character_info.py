@@ -63,10 +63,10 @@ class EquipmentProficiencies:
         
 
 class Skills:
-    def __init__(self, skills: list[str], modifiers: AbilityModifiers, proficency_modifier: int):
+    def __init__(self, skills: list[str], modifiers: AbilityModifiers, proficiency_modifier: int):
         self.skills = skills
         self.modifiers = modifiers
-        self.proficency_modifier = proficency_modifier
+        self.proficiency_modifier = proficiency_modifier
         self.skills_info = self.load_skills_info()
         self.skill_scores = self.calculate_skill_scores()
     
@@ -82,7 +82,7 @@ class Skills:
             ability = self.get_ability_for_skills(skill)
             ability = ability.lower().replace(' ', '_')
             modifier = getattr(self.modifiers, ability)
-            skill_scores[skill] = modifier + self.proficency_modifier
+            skill_scores[skill] = modifier + self.proficiency_modifier
         return skill_scores
     
     def get_ability_for_skills(self, skill: str) -> str:
