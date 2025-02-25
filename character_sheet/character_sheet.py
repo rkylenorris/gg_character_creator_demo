@@ -62,7 +62,7 @@ class CharacterSheet:
         skills = [skill for skill in self.player_class.skills]
         for skill in self.background.skill_proficiencies:
             skills.append(skill)
-        return Skills(skills, self.ability_modifiers, self.proficency_modifier)
+        return Skills(skills, self.ability_modifiers, self.proficiency_modifier)
     
     def __repr__(self):
         return f"{self.name} - {self.player_class.name} - {self.race.name} - {self.background.name}"
