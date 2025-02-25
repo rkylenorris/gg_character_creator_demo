@@ -1,11 +1,9 @@
 from flask import Flask, render_template
-from flask_bootstrap import Bootstrap
 from forms import CharacterForm
 from character_sheet import character_creator  # Your character creator function
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'your-secret-key-here'  # Replace with a secure key in production
-bootstrap = Bootstrap(app)
 
 @app.route('/')
 def home():
