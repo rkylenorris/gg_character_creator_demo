@@ -2,71 +2,227 @@
     {
         "name": "Steam Knight",
         "hit_die": "d10",
-        "primary_abilities": ["Might", "Endurance Core"],
-        "saving_throws": ["Might", "Endurance Core"],
+        "primary_abilities": [
+            "Might",
+            "Endurance Core"
+        ],
+        "saving_throws": [
+            "Might",
+            "Endurance Core"
+        ],
         "proficiencies": {
-            "armor": ["Medium Armor", "Heavy Armor", "Shields"],
-            "weapons": ["Melee Weapons", "Gunplay & Ranged Combat"],
-            "tools": ["Industrial Tools", "Weapon Maintenance Kit"]
+            "armor": [
+                "Medium Armor",
+                "Heavy Armor",
+                "Shields"
+            ],
+            "weapons": [
+                "Melee Weapons",
+                "Gunplay & Ranged Combat"
+            ],
+            "tools": [
+                "Industrial Tools",
+                "Weapon Maintenance Kit"
+            ]
         },
-        "skills": ["Brute Force", "Industrial Combat", "Steam Endurance"],
-        "starting_equipment": ["Steamplate Armor", "Clockwork Saber", "Deployable Shield"],
-        "starting_ability_scores": {"Might": 15, "Endurance Core": 14, "Reflexes": 12, "Arcane Logic": 10, "Aether Sense": 8, "Presence": 10}
+        "skills": [
+            "Brute Force",
+            "Industrial Combat",
+            "Steam Endurance"
+        ],
+        "starting_equipment": [
+            "Steamplate Armor",
+            "Clockwork Saber",
+            "Deployable Shield"
+        ],
+        "starting_ability_scores": {
+            "Might": 15,
+            "Endurance Core": 14,
+            "Reflexes": 12,
+            "Arcane Logic": 10,
+            "Aether Sense": 8,
+            "Presence": 10
+        },
+        "desc": "Armored in gear-enhanced exoskeletons and steam-powered plate, the Steam Knight combines raw martial prowess with mechanical augmentation. Their gear not only increases strength and durability but can also unleash bursts of mechanical energy on the battlefield.",
+        "role": "Frontline warrior"
     },
     {
         "name": "Arcane Engineer",
         "hit_die": "d8",
-        "primary_abilities": ["Arcane Logic", "Reflexes"],
-        "saving_throws": ["Arcane Logic", "Reflexes"],
+        "primary_abilities": [
+            "Arcane Logic",
+            "Reflexes"
+        ],
+        "saving_throws": [
+            "Arcane Logic",
+            "Reflexes"
+        ],
         "proficiencies": {
-            "armor": ["Light Armor"],
-            "weapons": ["Gunplay & Ranged Combat"],
-            "tools": ["Tinkering Kit", "Blueprint Scanner"]
+            "armor": [
+                "Light Armor"
+            ],
+            "weapons": [
+                "Gunplay & Ranged Combat"
+            ],
+            "tools": [
+                "Tinkering Kit",
+                "Blueprint Scanner"
+            ]
         },
-        "skills": ["Schematic Analysis", "Aether Mechanics", "Precision Engineering"],
-        "starting_equipment": ["Clockwork Ledger", "Tesla Pistol", "Toolkit"],
-        "starting_ability_scores": {"Arcane Logic": 16, "Reflexes": 14, "Might": 10, "Endurance Core": 12, "Aether Sense": 12, "Presence": 8}
+        "skills": [
+            "Schematic Analysis",
+            "Aether Mechanics",
+            "Precision Engineering"
+        ],
+        "starting_equipment": [
+            "Clockwork Ledger",
+            "Tesla Pistol",
+            "Toolkit"
+        ],
+        "starting_ability_scores": {
+            "Arcane Logic": 16,
+            "Reflexes": 14,
+            "Might": 10,
+            "Endurance Core": 12,
+            "Aether Sense": 12,
+            "Presence": 8
+        },
+        "desc": "The Arcane Engineer is a master of blending arcane science with mechanical ingenuity. They design intricate contraptions and cast spells powered by clockwork devices and steam energy, turning raw magical power into precise, engineered effects.",
+        "role": "Spellcaster/inventor"
     },
     {
         "name": "Gearwright",
         "hit_die": "d8",
-        "primary_abilities": ["Reflexes", "Aether Sense"],
-        "saving_throws": ["Reflexes", "Arcane Logic"],
+        "primary_abilities": [
+            "Reflexes",
+            "Aether Sense"
+        ],
+        "saving_throws": [
+            "Reflexes",
+            "Arcane Logic"
+        ],
         "proficiencies": {
-            "armor": ["Light Armor"],
-            "weapons": ["Gunplay & Ranged Combat", "Tinkering & Traps"],
-            "tools": ["Lockpicking Set", "Explosive Charges"]
+            "armor": [
+                "Light Armor"
+            ],
+            "weapons": [
+                "Gunplay & Ranged Combat",
+                "Tinkering & Traps"
+            ],
+            "tools": [
+                "Lockpicking Set",
+                "Explosive Charges"
+            ]
         },
-        "skills": ["Tinkering & Traps", "Aether Reflexes", "Gunplay & Ranged Combat"],
-        "starting_equipment": ["Gadget Gauntlet", "Lockpick Toolkit", "Explosive Satchels"],
-        "starting_ability_scores": {"Reflexes": 16, "Aether Sense": 14, "Arcane Logic": 12, "Might": 10, "Endurance Core": 12, "Presence": 10}
+        "skills": [
+            "Tinkering & Traps",
+            "Aether Reflexes",
+            "Gunplay & Ranged Combat"
+        ],
+        "starting_equipment": [
+            "Gadget Gauntlet",
+            "Lockpick Toolkit",
+            "Explosive Satchels"
+        ],
+        "starting_ability_scores": {
+            "Reflexes": 16,
+            "Aether Sense": 14,
+            "Arcane Logic": 12,
+            "Might": 10,
+            "Endurance Core": 12,
+            "Presence": 10
+        },
+        "desc": "Cunning and resourceful, the Gearwright relies on custom-built gadgets, mechanical traps, and sleight-of-hand techniques to infiltrate, sabotage, and escape. Their arsenal of mini-devices allows them to disable enemy machinery or create diversions in the heat of battle.",
+        "role": "Stealth and trickery expert"
     },
     {
         "name": "Runebound Cleric",
         "hit_die": "d8",
-        "primary_abilities": ["Aether Sense", "Presence"],
-        "saving_throws": ["Aether Sense", "Endurance Core"],
+        "primary_abilities": [
+            "Aether Sense",
+            "Presence"
+        ],
+        "saving_throws": [
+            "Aether Sense",
+            "Endurance Core"
+        ],
         "proficiencies": {
-            "armor": ["Light Armor", "Medium Armor"],
-            "weapons": ["Melee Weapons"],
-            "tools": ["Runic Inscriptions", "Healing Kit"]
+            "armor": [
+                "Light Armor",
+                "Medium Armor"
+            ],
+            "weapons": [
+                "Melee Weapons"
+            ],
+            "tools": [
+                "Runic Inscriptions",
+                "Healing Kit"
+            ]
         },
-        "skills": ["Magical Tuning", "Ritual Crafting", "Foresight & Instincts"],
-        "starting_equipment": ["Runic Gauntlet", "Aether-Infused Tome", "Healing Elixirs"],
-        "starting_ability_scores": {"Aether Sense": 16, "Presence": 14, "Endurance Core": 12, "Arcane Logic": 12, "Might": 10, "Reflexes": 8}
+        "skills": [
+            "Magical Tuning",
+            "Ritual Crafting",
+            "Foresight & Instincts"
+        ],
+        "starting_equipment": [
+            "Runic Gauntlet",
+            "Aether-Infused Tome",
+            "Healing Elixirs"
+        ],
+        "starting_ability_scores": {
+            "Aether Sense": 16,
+            "Presence": 14,
+            "Endurance Core": 12,
+            "Arcane Logic": 12,
+            "Might": 10,
+            "Reflexes": 8
+        },
+        "desc": "Drawing on the ancient power of enchanted runes and relics, the Runebound Cleric channels divine energy through magical inscriptions. They can mend wounds, bolster allies, and unleash righteous fury, all while wielding artifacts that combine sacred tradition with steampunk aesthetics.",
+        "role": "Divine healer and protector"
     },
     {
         "name": "Wild Warden",
         "hit_die": "d10",
-        "primary_abilities": ["Aether Sense", "Might"],
-        "saving_throws": ["Might", "Aether Sense"],
+        "primary_abilities": [
+            "Aether Sense",
+            "Might"
+        ],
+        "saving_throws": [
+            "Might",
+            "Aether Sense"
+        ],
         "proficiencies": {
-            "armor": ["Medium Armor"],
-            "weapons": ["Gunplay & Ranged Combat", "Melee Weapons"],
-            "tools": ["Survival Kit", "Animal Bonding"]
+            "armor": [
+                "Medium Armor"
+            ],
+            "weapons": [
+                "Gunplay & Ranged Combat",
+                "Melee Weapons"
+            ],
+            "tools": [
+                "Survival Kit",
+                "Animal Bonding"
+            ]
         },
-        "skills": ["Foresight & Instincts", "Gunplay & Ranged Combat", "Load Bearing"],
-        "starting_equipment": ["Grappling Hook Launcher", "Repeating Crossbow", "Survival Gear"],
-        "starting_ability_scores": {"Aether Sense": 14, "Might": 16, "Endurance Core": 12, "Arcane Logic": 10, "Reflexes": 12, "Presence": 8}
+        "skills": [
+            "Foresight & Instincts",
+            "Gunplay & Ranged Combat",
+            "Load Bearing"
+        ],
+        "starting_equipment": [
+            "Grappling Hook Launcher",
+            "Repeating Crossbow",
+            "Survival Gear"
+        ],
+        "starting_ability_scores": {
+            "Aether Sense": 14,
+            "Might": 16,
+            "Endurance Core": 12,
+            "Arcane Logic": 10,
+            "Reflexes": 12,
+            "Presence": 8
+        },
+        "desc": "The Wild Warden straddles the line between the untamed natural world and the rising tide of machinery. Attuned to both nature\u2019s raw power and innovative steampunk contraptions, they track foes across wild terrains and command nature-infused mechanical constructs to defend the balance of their realm.",
+        "role": "Nature guardian and tracker"
     }
 ]
