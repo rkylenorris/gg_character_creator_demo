@@ -4,7 +4,8 @@ from pathlib import Path
 class CharacterClass:
     def __init__(self, name: str, hit_die: str, primary_abilities: list[str], saving_throws: list[str],
                  proficiencies : dict[str, list[str]], skills: list[str],
-                 starting_equipment: list[str], starting_ability_scores: dict[str, int]):
+                 starting_equipment: list[str], starting_ability_scores: dict[str, int],
+                 desc: str, role: str):
         self.name = name
         self.hit_die = hit_die
         self.primary_abilities = primary_abilities
@@ -13,6 +14,8 @@ class CharacterClass:
         self.skills = skills
         self.starting_equipment = starting_equipment
         self.starting_ability_scores = starting_ability_scores
+        self.description = desc
+        self.role = role
         
     @classmethod
     def load_class(cls, class_name: str):

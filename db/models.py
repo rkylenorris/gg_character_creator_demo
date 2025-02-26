@@ -71,6 +71,8 @@ class ClassModel(db.Model):
     skills = db.Column(db.JSON)
     starting_equipment = db.Column(db.JSON)
     starting_ability_scores = db.Column(db.JSON)
+    description = db.Column(db.Text)
+    role = db.Column(db.Text)
     
     def __init__(self, chosen_class: CharacterClass):
         super().__init__()
@@ -82,6 +84,8 @@ class ClassModel(db.Model):
         self.skills = json.dumps(chosen_class.skills)
         self.starting_equipment = json.dumps(chosen_class.starting_equipment)
         self.starting_ability_scores = json.dumps(chosen_class.starting_ability_scores)
+        self.description = chosen_class.description
+        self.role = chosen_class.role
     
     def __repr__(self):
         return f"Class({self.name} - {self.hit_die})"
