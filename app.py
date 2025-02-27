@@ -1,9 +1,15 @@
 from flask import Flask, render_template
 from forms import CharacterForm
 from character_sheet import character_creator  # Your character creator function
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'your-secret-key-here'  # Replace with a secure key in production
+app.config['SECRET_KEY'] =  os.getenv('FLASK_SECRET_KEY') # Replace with a secure key in production
+app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('SQLALCHEMY_DATABASE_URI')
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = os.getenv('SQLALCHEMY_TRACK_MODIFICATIONS')
 
 @app.route('/')
 def home():
