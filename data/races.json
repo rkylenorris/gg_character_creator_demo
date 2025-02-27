@@ -70,7 +70,6 @@
         "ability_score_increase": {"Reflexes": 2, "Presence": 1},
         "size": "Medium",
         "speed": 30,
-        "glide_speed": 40,
         "traits": [
             "Glide: Can slow fall and move short distances in the air.",
             "Hawk’s Sight: Superior vision, granting proficiency in Perception.",
