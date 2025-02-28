@@ -1,10 +1,11 @@
-from flask import Flask, render_template, flash
+from flask import Flask, render_template, flash, jsonify, request
 from forms import CharacterForm
-from db_tools import db
+from db_tools import db, RaceModel, ClassModel, BackgroundModel
 from character_sheet import character_creator  # Your character creator function
 from dotenv import load_dotenv
 import os
 from flask_wtf.csrf import CSRFProtect
+
 
 load_dotenv()
 
@@ -29,13 +30,13 @@ def create_character():
     if form.validate_on_submit():
         # Retrieve data from the form
         name = form.name.data
-        class_name = form.char_class.data
-        race_name = form.race.data
-        background_name = form.background.data
+        class_name = ClassModel.query.get(form.character_class.data)
+        race_name = RaceModel.query.get(form.race.data)
+        background_name = BackgroundModel.query.get(form.background.data)
         appearance = form.appearance.data
         
         try:
-            character = character_creator(name, class_name, race_name, background_name, appearance)
+            character = character_creator(name, class_name.name, race_name.name, background_name.name, appearance)
             # flash(f"Character {name} created...", "success")
             return render_template('character_sheet.html', character=character)
         except Exception as e:
@@ -43,6 +44,25 @@ def create_character():
             return render_template('create_character.html', form=form, error=error)
     
     return render_template('create_character.html', form=form)
+
+
+@app.route("/get_description", methods=["POST"])
+def get_description():
+    data = request.json
+    item_type = data.get("type")
+    item_id = data.get("id")
+
+    if item_type == "race":
+        item = RaceModel.query.get(item_id)
+    elif item_type == "background":
+        item = BackgroundModel.query.get(item_id)
+    elif item_type == "class":
+        item = ClassModel.query.get(item_id)
+    else:
+        return jsonify({"error": "Invalid type"}), 400
+
+    return jsonify({"description": item.description}) if item else jsonify({"error": "Not found"}), 404
+
 
 
 if __name__ == '__main__':
