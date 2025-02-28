@@ -46,4 +46,4 @@ if __name__ == '__main__':
         db.create_all()
     load_from_json('data', db, app)
     print("Database created and populated.")
-    db.close()
+
