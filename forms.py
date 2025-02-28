@@ -6,7 +6,7 @@ from db_tools import RaceModel, ClassModel, BackgroundModel
 
 class CharacterForm(FlaskForm):
     name = StringField('Character Name', validators=[DataRequired()])
-    char_class = SelectField('Class', 
+    character_class = SelectField('Class', 
                                coerce=int, 
                                validators=[DataRequired()])
     race = SelectField('Race', 
@@ -20,5 +20,5 @@ class CharacterForm(FlaskForm):
 
     def populate_dropdowns(self):
         self.race.choices = [(r.id, r.name) for r in RaceModel.query.all()]
-        self.char_class = [(c.id, c.name) for c in ClassModel.query.all()]
+        self.character_class = [(c.id, c.name) for c in ClassModel.query.all()]
         self.background = [(b.id, b.name) for b in BackgroundModel.query.all()]
