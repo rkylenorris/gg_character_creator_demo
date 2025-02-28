@@ -1,39 +1,24 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField, SelectField, TextAreaField, SubmitField
 from wtforms.validators import DataRequired
+from db_tools import RaceModel, ClassModel, BackgroundModel
+
 
 class CharacterForm(FlaskForm):
     name = StringField('Character Name', validators=[DataRequired()])
     char_class = SelectField('Class', 
-                               choices=[
-                                   ('Steam Knight', 'Steam Knight'),
-                                   ('Arcane Engineer', 'Arcane Engineer'),
-                                   ('Gearwright', 'Gearwright'),
-                                   ('Runebound Cleric', 'Runebound Cleric'),
-                                   ('Wild Warden', 'Wild Warden')
-                               ], 
+                               coerce=int, 
                                validators=[DataRequired()])
     race = SelectField('Race', 
-                       choices=[
-                           ('Gearborn', 'Gearborn'),
-                           ('Aetherians', 'Aetherians'),
-                           ('Steamforged', 'Steamforged'),
-                           ('Gloomkin', 'Gloomkin'),
-                           ('Emberkin', 'Emberkin'),
-                           ('Skyborn', 'Skyborn')
-                       ], 
+                       coerce=int, 
                        validators=[DataRequired()])
     background = SelectField('Background', 
-                             choices=[
-                                 ('Clockwork Orphan', 'Clockwork Orphan'),
-                                 ("Steamwright's Apprentice", "Steamwright's Apprentice"),
-                                 ('Arcane Archivist', 'Arcane Archivist'),
-                                 ('Guild Operative', 'Guild Operative'),
-                                 ('Urban Innovator', 'Urban Innovator'),
-                                 ('Ethereal Envoy', 'Ethereal Envoy'),
-                                 ('Steamborne Nomad', 'Steamborne Nomad'),
-                                 ('Runic Forger', 'Runic Forger')
-                             ], 
+                             coerce=int, 
                              validators=[DataRequired()])
     appearance = TextAreaField('Appearance')
     submit = SubmitField('Create Character')
+
+    def populate_dropdowns(self):
+        self.race.choices = [(r.id, r.name) for r in RaceModel.query.all()]
+        self.char_class = [(c.id, c.name) for c in ClassModel.query.all()]
+        self.background = [(b.id, b.name) for b in BackgroundModel.query.all()]
