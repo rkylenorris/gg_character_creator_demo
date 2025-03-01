@@ -1,11 +1,11 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField, SelectField, TextAreaField, SubmitField
-from wtforms.validators import DataRequired
+from wtforms.validators import DataRequired, Length
 from db_tools import RaceModel, ClassModel, BackgroundModel
 
 
 class CharacterForm(FlaskForm):
-    name = StringField('Character Name', validators=[DataRequired()])
+    name = StringField('Character Name', validators=[DataRequired(), Length(min=2, max=50)])
     character_class = SelectField('Class', 
                                coerce=int, 
                                validators=[DataRequired()])
