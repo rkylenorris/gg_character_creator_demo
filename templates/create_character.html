@@ -14,6 +14,12 @@
     <form method="POST">
         {{ form.hidden_tag() }}
 
+        <!-- Character Name -->
+        <div class="mb-3">
+            <label for="name" class="form-label">Character Name:</label>
+            {{ form.name(class="form-control") }}
+        </div>
+
         <div class="mb-3">
             <label for="race" class="form-label">Select Race:</label>
             {{ form.race(class="form-select", onchange="updateDescription('race', this)") }}
@@ -30,6 +36,12 @@
             <label for="background" class="form-label">Select Background:</label>
             {{ form.background(class="form-select", onchange="updateDescription('background', this)") }}
             <p id="background_desc" class="mt-2 text-muted"></p>
+        </div>
+
+        <!-- Appearance -->
+        <div class="mb-3">
+          <label for="appearance" class="form-label">Appearance:</label>
+          {{ form.appearance(class="form-control", rows=4) }}
         </div>
 
         <button type="submit" class="btn btn-primary">Create Character</button>
