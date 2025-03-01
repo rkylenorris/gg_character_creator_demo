@@ -1,29 +1,32 @@
-from flask import Flask, render_template, flash, jsonify, request
 from forms import CharacterForm
 from db_tools import db, RaceModel, ClassModel, BackgroundModel
-from character_sheet import character_creator  # Your character creator function
+from character_sheet import character_creator
 from dotenv import load_dotenv
 import os
+from flask import Flask, render_template, jsonify, request
 from flask_wtf.csrf import CSRFProtect
 
-
+# configure app and db
 load_dotenv()
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] =  os.getenv('FLASK_SECRET_KEY') # Replace with a secure key in production
+app.config['SECRET_KEY'] =  os.getenv('FLASK_SECRET_KEY') 
 app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('SQLALCHEMY_DATABASE_URI')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = os.getenv('SQLALCHEMY_TRACK_MODIFICATIONS')
 db.init_app(app)
 csrf = CSRFProtect(app)
 
 
+# define home route
 @app.route('/')
 def home():
     return render_template('home.html')
 
 
+# define create-character route
 @app.route('/create-character', methods=['GET', 'POST'])
 def create_character():
+    # create form and populate dropdowns
     form = CharacterForm()
     form.populate_dropdowns()
     
@@ -37,7 +40,6 @@ def create_character():
         
         try:
             character = character_creator(name, class_name.name, race_name.name, background_name.name, appearance)
-            # flash(f"Character {name} created...", "success")
             return render_template('character_sheet.html', character=character)
         except Exception as e:
             error = str(e)
@@ -46,6 +48,7 @@ def create_character():
     return render_template('create_character.html', form=form)
 
 
+# define get_description route for updating description dynamically
 @app.route("/get_description", methods=["POST"])
 def get_description():
     data = request.json
@@ -64,6 +67,6 @@ def get_description():
     return jsonify({"description": item.description}) if item else jsonify({"error": "Not found"}), 404
 
 
-
+# run app
 if __name__ == '__main__':
     app.run(debug=True)
